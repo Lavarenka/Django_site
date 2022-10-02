@@ -1,0 +1,2 @@
+.\venv\Scripts\activate  // виртуальное окружене
+python manage.py runserver // запускаем сервак
