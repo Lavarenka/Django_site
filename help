@@ -1,2 +1,5 @@
 .\venv\Scripts\activate  // виртуальное окружене
 python manage.py runserver // запускаем сервак
+cd // переход в каталог
+#8 0,00
+
