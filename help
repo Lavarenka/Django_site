@@ -5,6 +5,8 @@ cd // переход в каталог
 python manage.py makemigrations // создаем фаил миграции
 python manage.py migrate // создаем миграцию
 python manage.py shell //консоль джанго
+python manage.py createsuperuser // создаем админа
+в настройках сменить язык на ru
 id == pk
 #11 0,00
 
