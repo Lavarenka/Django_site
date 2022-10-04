@@ -3,5 +3,5 @@ python manage.py runserver // запускаем сервак
 cd // переход в каталог
 python manage.py makemigrations // создаем фаил миграции
 python manage.py migrate // создаем миграцию
-#8 11,00
+#9 0,00
 
