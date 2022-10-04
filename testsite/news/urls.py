@@ -3,5 +3,4 @@ from .views import *
 # подключаем страницчки
 urlpatterns = [
     path('', index),
-    path('test/', test),
 ]

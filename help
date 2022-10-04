@@ -1,7 +1,10 @@
 .\venv\Scripts\activate  // виртуальное окружене
 python manage.py runserver // запускаем сервак
+ctrl + C // отключить сервак
 cd // переход в каталог
 python manage.py makemigrations // создаем фаил миграции
 python manage.py migrate // создаем миграцию
-#9 0,00
+python manage.py shell //консоль джанго
+id == pk
+#11 0,00
 
