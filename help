@@ -8,5 +8,5 @@ python manage.py shell //консоль джанго
 python manage.py createsuperuser // создаем админа
 в настройках сменить язык на ru
 id == pk
-#15 00,00
+#19 00,00
 

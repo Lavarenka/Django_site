@@ -16,4 +16,13 @@ def index(request):
     return render(request, 'news/index.html', context)
 
 def get_category(request, category_id):
-    news = News.objects.filter(category_id)
+    news = News.objects.filter(category_id = category_id) # фильтр для выборки определнных категорий
+    categories = Category.objects.all()
+    category = Category.objects.get(pk=category_id) # вытягиваем с бд категории
+    context = {
+        'news' : news,
+        'categories': categories,
+        'category': category
+    }
+    return render(request, 'news/category.html',context )
+# возврощает страничку с данными
