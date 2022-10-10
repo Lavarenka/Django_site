@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class News(models.Model):
@@ -13,6 +14,10 @@ class News(models.Model):
     # on_delete настройкад для удаления категории PROTECT защита от удаления
     #default для всех записей номер категории 1
     # рекомендуется добавить поле с цитатой
+
+    # для ссылок:
+    def get_absolute_url(self):
+        return reverse('view_news', kwargs={"news_id": self.pk})
 
     # выводим нормальное описание title
     def __str__(self):
@@ -29,6 +34,12 @@ class News(models.Model):
 class Category(models.Model):
     title = models.CharField(max_length=150, db_index=True,
                              verbose_name='Наименование категории')  # db_index индексирует поле
+
+    # для ссылок:
+    def get_absolute_url(self):
+        return reverse('category', kwargs={"category_id": self.pk})
+
+
     def __str__(self):
         return self.title
 
