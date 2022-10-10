@@ -8,5 +8,7 @@ python manage.py shell //консоль джанго
 python manage.py createsuperuser // создаем админа
 в настройках сменить язык на ru
 id == pk
+python manage.py collectstatic // собирает статику
+
 22 00,00
 
