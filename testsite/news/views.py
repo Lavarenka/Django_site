@@ -34,7 +34,8 @@ def add_news(request):
     if request.method == 'POST': # POST отправление данных из формы
         form = NewsForm(request.POST) # принять данные с формы
         if form.is_valid():
-            news = News.objects.create(**form.cleaned_data)# обработчик данных
+            # news = News.objects.create(**form.cleaned_data)# обработчик данных
+            news = form.save()
             return redirect(news) # после отправки формы закидывает по ссылке
     else:
         form = NewsForm()
