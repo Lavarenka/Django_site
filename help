@@ -10,5 +10,5 @@ python manage.py createsuperuser // создаем админа
 id == pk
 python manage.py collectstatic // собирает статику
 
-25 00,00
+28 00,00
 
