@@ -17,7 +17,7 @@ class News(models.Model):
 
     # для ссылок:
     def get_absolute_url(self):
-        return reverse('view_news', kwargs={"news_id": self.pk})
+        return reverse('view_news', kwargs={"pk": self.pk})
 
     # выводим нормальное описание title
     def __str__(self):
