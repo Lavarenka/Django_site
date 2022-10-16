@@ -3,7 +3,7 @@ from news.models import Category
 
 register = template.Library()
 
-
+# кастомные теги для вывода
 @register.simple_tag()
 def get_categories():
     return Category.objects.all()
