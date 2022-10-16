@@ -11,6 +11,7 @@ class News(models.Model):
     is_published = models.BooleanField(default=True, verbose_name='Опубликовано')
     category = models.ForeignKey('Category', on_delete=models.PROTECT, null=True, blank=True,
                                  verbose_name='Категория')
+    views = models.IntegerField(default=0) # кол-во просмотров
     # on_delete настройкад для удаления категории PROTECT защита от удаления
     #default для всех записей номер категории 1
     # рекомендуется добавить поле с цитатой
